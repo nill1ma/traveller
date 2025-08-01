@@ -1,0 +1,35 @@
+.trash-icon {
+    cursor: pointer;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 0.5px solid #363636;
+}
+
+.table-row {
+    width: 100%;
+    border-bottom: 0.5px solid #363636;
+    th, td {
+        padding: 10.5px;
+        border: 0.5px solid #363636;
+        text-align: start;
+    }
+}
+.float-menu {
+    list-style: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: #363636;
+    padding: 10px;
+    li {
+        cursor: pointer;
+        color: #fffafa;
+        padding: 10px;
+        &:hover {
+            background-color: #fffafa;
+            color: #171717;
+        }
+    }
+}

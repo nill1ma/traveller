@@ -1,0 +1,40 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    grid-area: header-area;
+    height: 140px;
+    .badge {
+        display: flex;
+        gap: 10px;
+        background-color: #363636;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        .sun {
+            color: #fffafa;
+            border-radius: 50%;
+            border: 1px solid #fffafa;
+        }
+        .moon {
+            color: #fffafa;
+            border-radius: 50%;
+            border: 1px solid #fffafa;
+        }
+    }
+}
+[data-theme="dark"] .header .badge {
+    .sun {
+        color: #171717;
+        border-radius: 50%;
+        border: 1px solid #171717;
+    }
+    .moon {
+        color: #171717;
+        border-radius: 50%;
+        border: 1px solid #171717;
+    }
+}

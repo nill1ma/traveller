@@ -1,0 +1,26 @@
+aside {
+    height: calc(100vh - 140px);
+    border: 1px solid #363636;
+    ul {
+        list-style: none;
+        padding-inline: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a {
+            text-decoration: none;
+            color: #363636;
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-block: 13px;
+                cursor: pointer;
+                background-color: #f2f2f2;
+                &:hover {
+                    background-color: #c2c2c2;
+                }
+            }
+        }
+    }
+}
