@@ -14,8 +14,10 @@ export interface Travel {
     category: Category;
 }
 
-export type TableTravel = Pick<Travel, 'id' | 'location' | 'status' | 'start_date' | 'end_date'>
-
+export type TableTravel = Pick<Travel, 'id' | 'location' | 'status' | 'start_date' | 'category'> & {
+  end_date?: Date;
+}
+export type FilterTravel = Pick<Travel, 'location'> & {status: string, category: string}
 export type Category = "vacation" | "business" | "adventure" | "culture" | "long_stay" | "short_stay";
 export enum CategoryEnum {
     vacation = "Vacation",

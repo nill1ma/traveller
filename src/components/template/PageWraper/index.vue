@@ -1,7 +1,7 @@
 <template>
     <div role="content" :data-testid="'page-base'" :style="style" :class="'container'">
         <HeaderComponent :dataTestId="'page-base-header'">
-            <span>Header</span>
+            <font-awesome-icon id="logo-header-icon" :icon="faPlaneDeparture" size="3x" /> 
             <BaseBadge :dataTestId="'page-base-header-badge'" :className="'badge'">
                 <v-icon :class="{ 'sun' : true }" name="bi-sun" @click="themeStore.setTheme('light')" scale="1.5"/>
                 <v-icon :class="{ 'moon' : true }" name="bi-moon" @click="themeStore.setTheme('dark')" scale="1.5"/>
@@ -20,6 +20,8 @@ import HeaderComponent from '@/components/organisms/HeaderComponent/HeaderCompon
 import SidebarComponent from '@/components/organisms/SidebarComponent/index.vue'
 import BaseBadge from "@/components/atoms/BaseBadge/BaseBadge.vue"
 import { useThemeStore } from '@/stores/theme/theme'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faPlaneDeparture } from '@fortawesome/free-solid-svg-icons'
 import { computed } from 'vue'
 defineOptions({ name: 'PageWraper' })
 defineProps({

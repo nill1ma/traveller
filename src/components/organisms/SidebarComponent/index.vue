@@ -5,7 +5,7 @@
                 <CystomHTMLListItem :dataTestId="'sidebar-item-travels'" :className="listItemClassName">
                     <span>
                         <font-awesome-icon :icon="route.icon" size="1x" /> 
-                        <span v-if="!isCollapsed">
+                        <span v-if="isCollapsed">
                             {{ route.label }}
                         </span>
                     </span>

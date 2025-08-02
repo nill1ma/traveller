@@ -1,14 +1,18 @@
-.trash-icon {
+.trash_icon {
     cursor: pointer;
 }
-
+.search_input{
+    margin-left: 10.5px;
+    outline: none;
+    padding: 10.5px;
+}
 .table {
     width: 100%;
     border-collapse: collapse;
     border-top: 0.5px solid #363636;
 }
 
-.table-row {
+.table_row {
     width: 100%;
     border-bottom: 0.5px solid #363636;
     th, td {
@@ -17,7 +21,7 @@
         text-align: start;
     }
 }
-.float-menu {
+.float_menu {
     list-style: none;
     position: absolute;
     z-index: 1000;

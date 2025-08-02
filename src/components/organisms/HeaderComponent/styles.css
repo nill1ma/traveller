@@ -2,11 +2,13 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     grid-area: header-area;
     height: 140px;
+    #logo-header-icon{
+        margin: 0 auto
+    }
     .badge {
         display: flex;
         gap: 10px;
@@ -14,6 +16,8 @@
         padding: 10px;
         border-radius: 5px;
         cursor: pointer;
+        right: 0;
+        position: absolute;
         .sun {
             color: #fffafa;
             border-radius: 50%;
